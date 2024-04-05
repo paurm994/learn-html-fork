@@ -42,3 +42,5 @@ En este post vamos a aprender qué es HTML y las principales etiquetas del lengu
     Etc.
 
 ```
+
+**Nota:** Añadimos ejemplo de cómo se puede navegar con `<a>` entre unos pocos archivos.
