@@ -82,3 +82,13 @@ En tu archivo HTML principal (blog.html), enlaza tu archivo de estilos CSS utili
 Asegúrate de que cada entrada de blog (<div class="post-preview">) tenga un color de fondo único y apliques estilos adecuados a los enlaces (<a>) dentro de cada entrada para mejorar la legibilidad y la interactividad del usuario al navegar por tu blog.
 
 Este ejercicio te permitirá practicar el uso de CSS para personalizar la apariencia de las entradas de un blog, aplicando diferentes colores y estilos a cada una para mejorar la presentación y experiencia de usuario.
+
+
+### Ejercicio 6: Mas estilos con CSS
+
+Añade algunos de estos usos de CSS o etiquetas en la página donde sea coherente con el diseño:
+
+- Estilo de botón a un enlace
+- Enlace relativo a otro achivo
+- Imagen como enlace
+- En la sección de contacto o similar, `<a>` para enviar email o llamar
