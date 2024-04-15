@@ -10,4 +10,12 @@ strong {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 90%;
 }
+a {
+  /* Cambio display para que pueda aplicar margen */
+  display: inline-block;
+  color: rgb(210, 143, 55);
+  font-family: 'Courier New', Courier, monospace;
+  /* Aplico margen vertical y 0 en horizontal */
+  margin: 10px 0;
 
+}
