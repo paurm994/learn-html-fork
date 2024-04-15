@@ -31,14 +31,38 @@
   <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">Texto</h1>
 
   <h2>RGB</h2>
+  <!-- 
+    RGB -> cada valor va de 0 a 255 (son 256 valores posibles) 
+    Hexadecimal -> 0 .. 9 A .. F, siendo A = 10 .. F = 15
+    RGB se puede escribir en decimal (0 a 255) o en hexadecimal (00 a FF)
+    Entonces, el rojo es:
+    rgb(255, 0, 0) o #FF0000
+  -->
   <p style="background-color: rgb(255, 0, 0);">Rojo</p>
+  <!-- 
+    Verde es: rgb(0, 255, 0)
+    #00FF00
+   -->
   <p style="background-color: rgb(0, 255, 0);">Verde</p>
+  <!-- 
+    Azul: rgb(0, 0, 255)
+    #0000FF
+   -->
   <p style="background-color: rgb(0, 0, 255);">Azul</p>
+
+  <!--  
+    Negro:  #000000
+    Blanco: #FFFFFF
+  -->
   <p style="background-color: rgb(0, 0, 0);">Negro</p>
   <p style="background-color: rgb(255, 255, 255);">Blanco</p>
 
   <h2>RGBA</h2>
-  <p style="background-color: rgba(255, 0, 0, 0.502);">Rojo al 50% de opacidad o alpha (alfa)</p>
+  <p>
+    De forma opcional, se puede agregar una cuarta coordenada o valor que es el <em>alfa</em> (a o A)
+    que se mide de 0 a 1 y representa la opacidad. En 0 no se ve y en 1 es máximo valor del color.
+  </p>
+  <p style="background-color: rgba(255, 0, 0, 0.5);">Rojo al 50% de opacidad o alpha (alfa)</p>
   <p style="background-color: rgba(0, 255, 0, 0.5);">Verde al 50%</p>
   <p style="background-color: rgba(0, 0, 255, 0.5);">Azul al 50%</p>
   <p style="background-color: rgba(0, 0, 0, 0.5);">Negro al 50%</p>
