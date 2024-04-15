@@ -13,9 +13,16 @@ strong {
 a {
   /* Cambio display para que pueda aplicar margen */
   display: inline-block;
-  color: rgb(210, 143, 55);
+  color: rgb(210, 143, 55); /* se aplica (sobreescribe) el del siguiente bloque */
   font-family: 'Courier New', Courier, monospace;
   /* Aplico margen vertical y 0 en horizontal */
   margin: 10px 0;
+}
 
+a {
+  background-color: #f44336;
+  color: white; /* sobreescribe la línea 16 */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
 }
