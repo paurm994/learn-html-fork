@@ -170,6 +170,14 @@
       color: black;
     }
     /* Para colorear las impares se usaría "odd" en vez de even */
+    tr {
+      border-bottom: 2px solid #ddd;
+    }
+    /* hover == dejar el cursor encima */
+    tr:hover {
+      background-color: #D6EEEE!important;
+      color: black;
+    }
   </style>
   <table>
     <caption>Horario</caption>
@@ -225,5 +233,34 @@
       <td>Descanso (pero recomendable)</td>
     </tr>
   </table>
+
+  <table>
+    <colgroup>
+      <col span="3">
+      <col span="2" style="background-color: red">
+    </colgroup>
+    <tr>
+      <th>Lun</th>
+      <th>Mar</th>
+      <th>Mie</th>
+      <th>Jue</th>
+      <th>Vie</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </table>
+
 </body>
 </html>
