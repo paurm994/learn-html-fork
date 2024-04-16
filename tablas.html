@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+  <!-- Uso interno de CSS con etiqueta style: -->
+  <style>
+    /* Selector de etiqueta <code> */
+    code {
+      background-color: lightgray; 
+      padding: 2px 5px;
+    }
+    pre {
+      border: 1px solid gray;
+      padding: 10px;
+      width: 90%;
+      background-color: lightgray;
+    }
+  </style>
+  <!-- Uso externo de CSS con link: -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- 
+    Hoja de estilos Water.css modo DARK:
+    https://watercss.kognise.dev/
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+  <link rel="shortcut icon" href="movil.png" type="image/x-icon">
+  <!-- Estilos de tabla: -->
+  <style>
+    /* Alguno estilos para resaltar <th> */
+    th {
+      /* text-decoration: underline; */
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+    caption h2, caption p {
+      text-align: center;
+    }
+    caption {
+      border-bottom: 1px solid gray;
+      margin-bottom: 15px;
+    }
+    table {
+      border: 3px solid lightgray;
+      padding: 10px;
+      border-collapse: collapse; /* para evitar dobles bordes */
+    }
+    th {
+      background-color: rgb(88, 83, 83);
+    }
+    td a {
+      display: inline-block;
+      margin: 10px;
+      color: lightgray;
+      border-radius: 10px; /* cuanto mas alto el número, más redondo el borde */
+      padding: 10px;
+      background-color: tomato;
+    }
+    td {
+      /* Atajo de border: */
+      /* border: 3px dotted tomato; */
+      /* O si queremos separar cada propiedad: */
+      border-width: 2px;
+      border-style: dotted;
+      border-color: brown;
+    }
+    tr, td, td p {
+      /* Colocamos el tamaño vertical a 150px y si tiene que ocupar el contenido se coloca una barra de navegación automática */
+      height: 150px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tablas</h1>
+
+  <table style="border-collapse: collapse;">
+    <!-- caption es el título (y/o descripción) descriptivo de la tabla -->
+    <caption>
+      <h2>Título de tabla</h2>
+      <p>Descripción de la tabla</p>  
+    </caption>
+    <!-- Cada fila de la tabla se coloca en un <tr> es decir, table row (fila) -->
+    <tr>
+      <th style="width: 25%;">Columna 1</th>
+      <th style="width: 50%;">Columna 2</th>
+      <th style="width: 25%;">Columna 3</th>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td><img src="movil.png" alt="1"></td>
+      <td><img src="movil.png" alt="1"></td>
+      <td><img src="movil.png" alt="1"></td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td>
+        Centro comercial Moctezuma
+        <a href="#">Botón</a>
+      </td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td><a href="#">link</a></td>
+      <td><ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul></td>
+      <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem eaque itaque! Ullam necessitatibus qui quam fugiat, vitae adipisci laboriosam tempore dignissimos minus. Quaerat quas id, quia magnam quae atque.</p></td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <!-- <td>Alfreds Futterkiste</td> -->
+      <td colspan="3" style="text-align: center; border: 1px solid lightgray;">Este td ocupa 3 columnas</td>
+      <!-- <td>Germany</td> -->
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td style="text-align: center; border: 1px solid lightgray;">Alfreds Futterkiste</td>
+      <td style="text-align: center; border: 1px solid lightgray;">Maria Anders</td>
+      <td style="text-align: center; border: 1px solid lightgray;">Germany</td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td rowspan="2" style="border: 3px solid white;">col 1</td>
+      <td>col 2</td>
+      <td>col 3</td>
+    </tr>
+    <tr>
+      <!-- Este elemento no es necesario porque col 1 de la fila anterior ocupa su espacio: -->
+      <!-- <td>col 1</td> -->
+      <td>col 2</td>
+      <td>col 3</td>
+    </tr>
+  </table>
+
+  <h2>Headers de tabla (th)</h2>
+  <style>
+    td {
+      border: 1px dashed gray;
+    }
+    th {
+      border: 1px solid black;
+    }
+    /* Centrado en horizontal y vertical: */
+    td, th {
+      text-align: center;
+      vertical-align: middle;
+      /* Un valor: 4 direcciones (top, bottom, right, left) */
+      padding: 10px;
+      /* Dos valores: top/bot right/left */
+      padding: 10px 10px;
+      /* Tres valores: top right/left bottom */
+      padding: 10px 10px 10px;
+      /* Cuatro valores: top right bottom left */
+      padding: 10px 10px 10px 10px;
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 3px;
+    }
+    /* Ejemplo de coloreado de columna par (even): */
+    td:nth-child(even) {
+      background-color: lightgray;
+      color: black;
+    }
+    /* Para colorear las impares se usaría "odd" en vez de even */
+    tr {
+      border-bottom: 2px solid #ddd;
+    }
+    /* hover == dejar el cursor encima */
+    tr:hover {
+      background-color: #D6EEEE!important;
+      color: black;
+    }
+  </style>
+  <table>
+    <caption>Horario</caption>
+    <tr>
+      <th colspan="2" rowspan="2">Día / Tutor:</th>
+      <th>L</th>
+      <th>M</th>
+      <th>X</th>
+      <th>J</th>
+      <th>V</th>
+      <th colspan="2">S / D</th>
+    </tr>
+    <tr>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+    </tr>
+    <tr>
+      <td>hora</td>
+      <th>8:00</th>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>Python</td>
+      <td>SQL</td>
+      <td>Descanso (opcional)</td>
+      <td>Descanso (pero recomendable)</td>
+    </tr>
+    <tr>
+      <td>hora</td>
+      <th>9:00</th>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>Python</td>
+      <td>SQL</td>
+      <td>Descanso (opcional)</td>
+      <td>Descanso (pero recomendable)</td>
+    </tr>
+    <tr>
+      <td>hora</td>
+      <th>hh:mm</th>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>Python</td>
+      <td>SQL</td>
+      <td>Descanso (opcional)</td>
+      <td>Descanso (pero recomendable)</td>
+    </tr>
+  </table>
+
+  <table>
+    <colgroup>
+      <col span="3">
+      <col span="2" style="background-color: red">
+    </colgroup>
+    <tr>
+      <th>Lun</th>
+      <th>Mar</th>
+      <th>Mie</th>
+      <th>Jue</th>
+      <th>Vie</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+</body>
+</html>
