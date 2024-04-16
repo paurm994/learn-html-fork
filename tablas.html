@@ -66,6 +66,11 @@
       border-style: dotted;
       border-color: brown;
     }
+    tr, td, td p {
+      /* Colocamos el tamaño vertical a 150px y si tiene que ocupar el contenido se coloca una barra de navegación automática */
+      height: 150px;
+      overflow-y: auto;
+    }
   </style>
 </head>
 <body>
@@ -79,9 +84,9 @@
     </caption>
     <!-- Cada fila de la tabla se coloca en un <tr> es decir, table row (fila) -->
     <tr>
-      <th>Columna 1</th>
-      <th>Columna 2</th>
-      <th>Columna 3</th>
+      <th style="width: 25%;">Columna 1</th>
+      <th style="width: 50%;">Columna 2</th>
+      <th style="width: 25%;">Columna 3</th>
     </tr>
     <!-- Otra fila: -->
     <tr>
