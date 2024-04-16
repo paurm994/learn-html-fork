@@ -35,12 +35,24 @@
       letter-spacing: 3px;
       text-align: center;
     }
+    caption h2, caption p {
+      text-align: center;
+    }
+    caption {
+      border-bottom: 1px solid gray;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
   <h1>Tablas</h1>
 
   <table>
+    <!-- caption es el título (y/o descripción) descriptivo de la tabla -->
+    <caption>
+      <h2>Título de tabla</h2>
+      <p>Descripción de la tabla</p>  
+    </caption>
     <!-- Cada fila de la tabla se coloca en un <tr> es decir, table row (fila) -->
     <tr>
       <th>Columna 1</th>
