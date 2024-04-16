@@ -42,6 +42,22 @@
       border-bottom: 1px solid gray;
       margin-bottom: 15px;
     }
+    table {
+      border: 3px solid lightgray;
+      padding: 10px;
+      border-collapse: collapse; /* para evitar dobles bordes */
+    }
+    th {
+      background-color: rgb(88, 83, 83);
+    }
+    td a {
+      display: inline-block;
+      margin: 10px;
+      color: lightgray;
+      border-radius: 10px; /* cuanto mas alto el número, más redondo el borde */
+      padding: 10px;
+      background-color: tomato;
+    }
   </style>
 </head>
 <body>
@@ -67,7 +83,10 @@
     </tr>
     <!-- Otra fila: -->
     <tr>
-      <td>Centro comercial Moctezuma</td>
+      <td>
+        Centro comercial Moctezuma
+        <a href="#">Botón</a>
+      </td>
       <td>Francisco Chang</td>
       <td>Mexico</td>
     </tr>
