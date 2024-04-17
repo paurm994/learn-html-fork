@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases e Ids</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <style>
+    #nav, #nav-mobile {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    #nav li {
+      /* 
+      left hace que se queden hacia la izq
+      right hace lo mismo hacia der
+      y center los coloca en una línea cada uno (puede funcionar bien en móvil) 
+      */
+      float: left;
+    }
+
+    #nav li a, #nav-mobile li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      /* Quita el subrayado de los <a> */
+      text-decoration: none;
+    }
+
+    #nav li a:hover, #nav-mobile li a:hover {
+      background-color: #111111;
+    }
+    #nav-mobile li {
+      float: center;
+    }
+    #boton {
+      display: inline-block;
+      color: brown;
+      border: 1px solid black;
+      padding: 10px;
+      background-color: aqua;
+      margin-top: 10px;
+    }
+    /* El id tiene prioridad respecto de la clase y no se aplican estos estilos: */
+    .boton {
+      display: none;
+      margin: 0;
+      color: yellow;
+      border: 1px solid orange;
+    }
+  </style>
+  
+  <ul id="nav">
+    <li><a href="#tema-1">Tema 1</a></li>
+    <li><a href="#tema-2">Tema 2</a></li>
+    <li><a href="#tema-3">Tema 3</a></li>
+  </ul>
+
+  <h2 id="tema-1">Tema 1</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi provident hic quasi maiores, blanditiis eum molestias reiciendis nostrum odit velit architecto, natus aperiam cumque dignissimos accusamus modi voluptatum. Dolorum, culpa!</p>
+  <h2 id="tema-2">Tema 2</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi provident hic quasi maiores, blanditiis eum molestias reiciendis nostrum odit velit architecto, natus aperiam cumque dignissimos accusamus modi voluptatum. Dolorum, culpa!</p>
+  <h2 id="tema-3">Tema 3</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi provident hic quasi maiores, blanditiis eum molestias reiciendis nostrum odit velit architecto, natus aperiam cumque dignissimos accusamus modi voluptatum. Dolorum, culpa!</p>
+  
+  <hr>
+  <a href="#nav" id="boton" class="boton">Volver arriba</a>
+
+</body>
+</html>

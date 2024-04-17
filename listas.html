@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+  <h2>Listas ordenadas</h2>
+  <ol>
+    <li>Lorem, ipsum dolor.</li>
+    <ol type="a">
+      <li >Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>Lorem ipsum dolor sit.</li>
+    </ol>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Lorem, ipsum dolor.</li>
+  </ol>
+  <p style="padding-left: 20px;">...</p>
+  <ol start="20">
+    <li>Lorem, ipsum.</li>
+    <li>Lorem, ipsum.</li>
+  </ol>
+  <h2>Listas no ordenadas</h2>
+  
+  <ul>
+    <li>1</li>
+    <ul style="list-style-type:square">
+      <li>a</li>
+      <li>b</li>
+    </ul>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+
+  <h2>Descripciones</h2>
+
+  <dl>
+    <dt>Café</dt>
+    <dd>- Lorem ipsum dolor sit.</dd>
+    <dt>Leche</dt>
+    <dd>- descripción aquí</dd>
+  </dl>
+
+  <h2>ul en navegación</h2>
+  <style>
+    #nav, #nav-mobile {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    #nav li {
+      /* 
+      left hace que se queden hacia la izq
+      right hace lo mismo hacia der
+      y center los coloca en una línea cada uno (puede funcionar bien en móvil) 
+      */
+      float: left;
+    }
+
+    #nav li a, #nav-mobile li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      /* Quita el subrayado de los <a> */
+      text-decoration: none;
+    }
+
+    #nav li a:hover, #nav-mobile li a:hover {
+      background-color: #111111;
+    }
+    #nav-mobile li {
+      float: center;
+    }
+  </style>
+  <p>Layout habitual para una navbar en PC (pantalla grande):</p>
+  <ul id="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <p>Variante para móvil (pantalla pequeña o mediana):</p>
+
+  <ul id="nav-mobile">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+</body>
+</html>
