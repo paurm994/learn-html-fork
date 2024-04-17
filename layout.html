@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1350px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 450px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  article img {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  article {
+    overflow-y: auto;
+  }
+}
+code {
+  background-color: lightgray;
+  padding: 0 15px;
+}
+article p, article img {
+  display: inline-block;
+  width: 49%;
+}
+article img {
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<h2>Layout</h2>
+<p>Este layout tiene <code>header</code>, dos columnas y un <code>footer</code>.</p>
+<p>Esta plantilla es responsive.</p>
+
+<header>
+  <h1>Ciudades</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#london">London</a></li>
+      <li><a href="#paris">Paris</a></li>
+      <li><a href="#tokyo">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 id="london">London</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum expedita aut necessitatibus commodi illo provident. Iusto tempore iure, sunt amet error sed, odit architecto ea reiciendis accusamus esse eaque?</p>
+    <img src="london.jpeg" alt="London">
+  </article>
+  <article>
+    <h2 id="paris">Paris</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perspiciatis fuga rerum quam illum, quis dolorem quas provident doloribus recusandae dolor eum culpa, eaque iusto quod, nobis sapiente totam nemo!</p>
+    <img src="paris.jpeg" alt="London">
+  </article>
+  <article>
+    <h2 id="tokyo">Tokyo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At molestiae dolor minus ex deserunt labore ad consequuntur explicabo atque debitis cupiditate illo sequi consequatur, dolores sint aliquid quas quaerat libero!</p>
+    <img src="tokyo.jpeg" alt="London">
+  </article>
+</section>
+
+<footer>
+  <h3>Footer</h3>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, distinctio.</p>
+</footer>
+
+</body>
+</html>
+
