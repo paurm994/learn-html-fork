@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline y block</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>inline</h2>
+  <p>Hay elementos que no saltan línea podrían no aplicar bien los espacios:</p>
+  <style>
+    /* Selector de clase */
+    .inline {
+      display: inline;
+      border: 1px solid black;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+  <img class="inline" src="movil.png" alt="movil 1" width="100">
+  <span>Lorem, ipsum.</span>
+  <img class="inline" src="movil.png" alt="movil 2" width="100">
+  <img class="inline" src="movil.png" alt="movil 3" width="100">
+
+  <h2>inline-block</h2>
+
+  <p>Los elementos con <code>inline-block</code> aplican los espacios siempre pero no saltan línea:</p>
+
+  <style>
+    .inline-block {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
+  <img class="inline-block" src="movil.png" alt="movil 1" width="100">
+  <span>Lorem, ipsum dolor.</span>
+  <img class="inline-block" src="movil.png" alt="movil 2" width="100">
+  <img class="inline-block" src="movil.png" alt="movil 3" width="100">
+
+  <h2>block</h2>
+  <style>
+    .block {
+        display: block;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+      }
+  </style>
+  <img class="block" src="movil.png" alt="movil 1" width="100">
+  <span class="block">Lorem, ipsum dolor.</span>
+  <img class="block" src="movil.png" alt="movil 2" width="100">
+  <img class="block" src="movil.png" alt="movil 3" width="100">
+
+  <h2>div</h2>
+
+  <p>Un <code>div</code> nos permite crear elementos agrupados a los que podemos darle uso de forma repetida:</p>
+  <style>
+    .imagen {
+      width: 200px;
+      border: 2px solid brown;
+      border-radius: 10px;
+      box-shadow: 3px 1px 1px burlywood;
+      padding: 10px;
+      text-align: center;
+    }
+    .imagen img {
+      width: 180px;
+      display: inline-block;
+      margin: 0 auto;
+      border: 1px solid lightgray;
+      box-shadow: 3px 1px 1px lightgray;
+      border-radius: 10px;
+    }
+    .imagen h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .imagen p, .imagen a {
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    .imagen a {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: rgb(132, 42, 42);
+      color: beige;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .imagen a:hover {
+      background-color: rgba(132, 42, 42, 0.5);
+      color: rgb(104, 18, 18);
+    }
+    .imagen {
+      /* El primer valor es top/bottom y el segundo al ser automático centra el elemento: */
+      margin: 10px auto;
+    }
+  </style>
+  <div class="imagen">
+    <h2>Título de la imagen 1</h2>
+    <img src="movil.png" alt="movil">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, blanditiis.</p>
+    <p><a href="#">Ver más</a></p>
+  </div>
+  <div class="imagen">
+    <h2>Título de la imagen 2</h2>
+    <img src="movil.png" alt="movil">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, blanditiis.</p>
+    <p><a href="#">Ver más</a></p>
+  </div>
+</body>
+</html>
