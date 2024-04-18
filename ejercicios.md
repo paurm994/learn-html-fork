@@ -92,3 +92,31 @@ Añade algunos de estos usos de CSS o etiquetas en la página donde sea coherent
 - Enlace relativo a otro achivo
 - Imagen como enlace
 - En la sección de contacto o similar, `<a>` para enviar email o llamar
+
+### Ejercicio 7: Diseño Responsive con Media Queries
+
+**Nota:** te puedes basar en la estructura presentada en [layout.html](layout.html) para el responsive.
+
+Agrega media queries en tu archivo styles.css para hacer que la página blog.html sea responsive. Debes asegurarte de que el contenido se visualice correctamente en dispositivos de diferentes tamaños:
+
+Configura un breakpoint para pantallas menores de 768px, donde las columnas de contenido se apilen en lugar de estar lado a lado.
+Asegúrate de que el texto sea legible y las imágenes se escalen adecuadamente en dispositivos móviles.
+
+### Ejercicio 8: Menú de Navegación Responsive
+
+Implementa un menú de navegación que sea responsive y se adapte a dispositivos móviles en blog.html:
+
+El menú debería mostrarse como una barra horizontal en pantallas grandes.
+En pantallas más pequeñas, el menú debería transformarse en un menú hamburguesa que los usuarios puedan expandir y colapsar.
+
+### Ejercicio 9: Imágenes Flexibles
+Modifica las imágenes de tus posts en blog.html para que sean flexibles y responsivas:
+
+Utiliza propiedades CSS como max-width y height auto para asegurar que las imágenes se ajusten al ancho de la pantalla sin distorsionarse.
+Asegúrate de que las imágenes no excedan el ancho de la pantalla en dispositivos móviles.
+
+### Ejercicio 10: Columnas Flexibles para Artículos
+En blog.html, utiliza Flexbox para organizar los artículos en columnas que se adapten al tamaño de la pantalla:
+
+En pantallas de escritorio, los artículos deben mostrarse en dos o tres columnas.
+En dispositivos móviles, los artículos deben mostrarse en una sola columna para facilitar la lectura.
