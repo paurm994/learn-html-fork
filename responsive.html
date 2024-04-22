@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>picture</h2>
+  <picture>
+    <source srcset="https://placehold.co/300?text=Hasta+600+px" media="(max-width: 600px)">
+    <source srcset="https://placehold.co/300?text=Hasta+1000+px" media="(max-width: 1000px)">
+    <!-- <source srcset="flowers.jpg"> -->
+    <img src="https://placehold.co/300?text=Imagen+por+defecto" alt="alt">
+  </picture>
+</body>
+</html>
