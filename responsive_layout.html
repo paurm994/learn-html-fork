@@ -10,6 +10,9 @@ body, html {
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #444;
+}
 p {
   color: #777
 }
@@ -17,19 +20,23 @@ p {
 .menu {
   float: left;
   width: 20%;
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 75vh;
+  max-height: 75vh;
   overflow-y: auto;
   text-align: center;
   /* solo para maquetación: */
   /* border: 2px solid brown; */
 }
 /* Estilos adicionales para la barra de desplazamiento */
-.menu::-webkit-scrollbar, .right::-webkit-scrollbar {
+.menu::-webkit-scrollbar, 
+.right::-webkit-scrollbar,
+.main::-webkit-scrollbar {
     width: 10px; /* Ancho de la barra de desplazamiento */
 }
 
-.menu::-webkit-scrollbar-thumb, .right::-webkit-scrollbar-thumb {
+.menu::-webkit-scrollbar-thumb, 
+.right::-webkit-scrollbar-thumb, 
+.main::-webkit-scrollbar-thumb {
     background-color: #888; /* Color del "pulgarcito" (la barra interna...) de la barra de desplazamiento */
     border-radius: 5px; /* Radio de borde del "pulgarcito" */
 }
@@ -45,9 +52,20 @@ p {
 
 .main {
   float: left;
+  color: #eee;
   width: 60%;
   padding: 0 20px;
-  background-color: brown;
+  min-height: 75vh;
+  max-height: 75vh;
+  overflow-y: auto;
+  /* Solo para maquetación: */
+  /* background-color: brown; */
+}
+.main p {
+  color: #ccc;
+}
+.main h2 {
+  color: #aaa;
 }
 
 .right {
@@ -56,8 +74,8 @@ p {
   width: 20%;
   padding: 15px;
   margin-top: 0px;
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 75vh;
+  max-height: 75vh;
   text-align: center;
   overflow-y: auto;
   /* Solo para maquetación: */
@@ -111,7 +129,7 @@ footer {
     position: relative;
     padding: 0 10px;
   }
-  .menu, .right {
+  .menu, .right, .main {
     /* Hacemos que no haya barra de navegación en pantallas pequeñas: */
     max-height: max-content;
   }
@@ -145,8 +163,10 @@ footer h3 {
 
 /* Sección principal */
 #container {
-  border: 5px solid burlywood;
-  min-height: 50vh;
+  padding: 20px 0;
+  /* Solo para maquetación: */
+  /* border: 5px solid burlywood; */
+  min-height: 75vh;
 }
 </style>
 </head>
@@ -170,13 +190,30 @@ footer h3 {
     <a href="#">Link 7</a>
     <a href="#">Link 8</a>
     <a href="#">Link 9</a>
-    <a href="#">Link 10</a>
+    <a href="#">Link 11</a>
+    <a href="#">Link 12</a>
+    <a href="#">Link 13</a>
+    <a href="#">Link 14</a>
+    <a href="#">Link 15</a>
   </div>
 
   <!-- Main -->
   <div class="main">
     <h2>Lorum Ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
   </div>
 
   <!-- Right -->
