@@ -10,6 +10,9 @@ body, html {
   padding: 0;
   margin: 0;
 }
+p {
+  color: #777
+}
 
 .menu {
   float: left;
@@ -17,7 +20,7 @@ body, html {
   text-align: center;
 }
 
-.menu a {
+.menu a, footer a {
   background-color: #e5e5e5;
   padding: 8px;
   margin-top: 7px;
@@ -56,11 +59,12 @@ footer > div {
   padding:10px;
   margin-top:7px;
   width: 100vw;
-  height: 200px;
+  min-height: 200px;
 }
 
 footer {
-  padding-bottom: 30px;
+  color: #777;
+  padding-bottom: 10px;
   background-color:#e5e5e5;
   display: flex;
   align-items: center;
@@ -71,6 +75,33 @@ footer {
   position: absolute;
   /* top, right, bottom, left colocan espaciado desde el lado correspodiente: */
   bottom: 0px;
+}
+
+/* Media query para responsive del footer: */
+@media only screen and (max-width: 620px) {
+  /* Pantallas de 650px de ancho o menos: */
+  footer .row {
+    flex-direction: column;
+  }
+  footer {
+    position: relative;
+    padding: 0 10px;
+  }
+}
+
+footer a {
+  padding: 2px;
+  margin-top: 3px;
+}
+
+footer ul {
+  padding: 0;
+}
+h1, h2 {
+  color: #333;
+}
+footer h3 {
+  color: #333;
 }
 
 .row {
@@ -105,7 +136,7 @@ footer {
   </div>
 
   <div class="right">
-    <h2>About</h2>
+    <h2>Footer</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
   </div>
 </div>
@@ -119,6 +150,7 @@ footer {
     <div class="row">
       <div>
         <ul class="column">
+          <h3>Título 1</h3>
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
@@ -128,6 +160,7 @@ footer {
 
       <div>
         <ul class="column">
+          <h3>Título 2</h3>
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
@@ -137,6 +170,7 @@ footer {
 
       <div>
         <ul class="column">
+          <h3>Título 3</h3>
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
