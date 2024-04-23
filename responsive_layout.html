@@ -6,6 +6,10 @@
 * {
   box-sizing: border-box;
 }
+body, html {
+  padding: 0;
+  margin: 0;
+}
 
 .menu {
   float: left;
@@ -43,6 +47,42 @@
     width: 100%;
   }
 }
+
+/* Footer  */
+
+footer > div {
+  background-color:#e5e5e5;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  width: 100vw;
+  height: 200px;
+}
+
+footer {
+  padding-bottom: 30px;
+  background-color:#e5e5e5;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  /* Fixed hace que siempre se vea el elemento: */
+  /* position: fixed; */ 
+  /* Absolute coloca el elemento donde se posicione */
+  position: absolute;
+  /* top, right, bottom, left colocan espaciado desde el lado correspodiente: */
+  bottom: 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
 </style>
 </head>
 <body style="font-family:Verdana;color:#aaaaaa;">
@@ -70,8 +110,47 @@
   </div>
 </div>
 
-<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+<footer>
+  <div>
+    <p>
+      &copy; Copyright - Plantilla original de W3schools.com modificada por <a href="https://github.com/cesarlpb">César P.</a>
+    </p>
+    
+    <div class="row">
+      <div>
+        <ul class="column">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </ul>
+      </div>
 
+      <div>
+        <ul class="column">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="column">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </ul>
+      </div>
+    </div>
+
+    <p>
+      Repositorio: <a href="https://github.com/cesarlpb/learn-html">@cesarlpb/learn-html</a>
+    </p>
+
+  </div>
+</footer>
 </body>
 </html>
 
