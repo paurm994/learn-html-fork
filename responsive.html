@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      padding: 0;
+      margin: 0;
+    }
+    body > div {
+      padding: 5px;
+    }
+    h1 {
+      font-size: 10vw; /* 1vw es centésima parte del ancho de viewport*/
+      /* 1vh es centésima parte de la altura de viewport */
+      /* 100 vw > 100% porque vw se basa en todo el ancho de pantalla */
+    }
+    p {
+      font-size: 20px;
+      width: 100%;
+    }
+    .container {
+      height: 50px;
+      border: 3px solid black;
+      width: 50vw;
+      margin: 10px auto;
+      color: white;
+      background-color: brown;
+    }
+    div p {
+      text-align: center;
+      line-height: 50px;
+      margin: 0;
+      vertical-align: middle;
+    }
+    @media screen and (max-width: 1000px) {
+      .container {
+        width: 100vw;
+        background-color: beige;
+        color: brown;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Texto responsive</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam! Quae, et! Recusandae numquam rem illo voluptas, perspiciatis in at quos alias minima dignissimos aperiam eaque, repellendus reiciendis animi aut!</p>
+    <h2>picture</h2>
+    <picture>
+      <source srcset="https://placehold.co/300?text=Hasta+600+px" media="(max-width: 600px)">
+      <source srcset="https://placehold.co/300?text=Hasta+1000+px" media="(max-width: 1000px)">
+      <!-- <source srcset="flowers.jpg"> -->
+      <img src="https://placehold.co/300?text=Imagen+por+defecto" alt="alt">
+    </picture>  
+  </div>
+  
+  <div class="container">
+    <p>div</p>
+  </div>
+</body>
+</html>
