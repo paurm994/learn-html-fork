@@ -19,18 +19,18 @@ p {
   width: 20%;
   min-height: 50vh;
   max-height: 50vh;
-  overflow-y: overlay;
+  overflow-y: auto;
   text-align: center;
   /* solo para maquetación: */
   /* border: 2px solid brown; */
 }
 /* Estilos adicionales para la barra de desplazamiento */
-.menu::-webkit-scrollbar {
+.menu::-webkit-scrollbar, .right::-webkit-scrollbar {
     width: 10px; /* Ancho de la barra de desplazamiento */
 }
 
-.menu::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color del "pulgarcito" de la barra de desplazamiento */
+.menu::-webkit-scrollbar-thumb, .right::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del "pulgarcito" (la barra interna...) de la barra de desplazamiento */
     border-radius: 5px; /* Radio de borde del "pulgarcito" */
 }
 
@@ -56,9 +56,12 @@ p {
   width: 20%;
   padding: 15px;
   margin-top: 0px;
-  /* height: 100%; */
+  min-height: 50vh;
+  max-height: 50vh;
   text-align: center;
-  border: 2px solid brown;
+  overflow-y: auto;
+  /* Solo para maquetación: */
+  /* border: 2px solid brown; */
 }
 
 @media only screen and (max-width: 620px) {
@@ -98,7 +101,7 @@ footer {
   bottom: 0px;
 }
 
-/* Media query para responsive del footer: */
+/* Media query para responsive del footer y otros elementos: */
 @media only screen and (max-width: 620px) {
   /* Pantallas de 650px de ancho o menos: */
   footer .row {
@@ -107,6 +110,10 @@ footer {
   footer {
     position: relative;
     padding: 0 10px;
+  }
+  .menu, .right {
+    /* Hacemos que no haya barra de navegación en pantallas pequeñas: */
+    max-height: max-content;
   }
 }
 
@@ -174,7 +181,15 @@ footer h3 {
 
   <!-- Right -->
   <div class="right">
-    <h2>Título</h2>
+    <h2>Título #1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <h2>Título #2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <h2>Título #3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <h2>Título #4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <h2>Título #5</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
   </div>
 </div>
